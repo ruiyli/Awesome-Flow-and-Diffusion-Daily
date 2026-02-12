@@ -6,7 +6,7 @@
 [![Topic](https://img.shields.io/badge/Topic-Flow%20Matching-green)](https://arxiv.org/search/?query=%22Flow+Matching%22&searchtype=all)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-> **Tracking the frontier of Generative AI: Flow Matching, Diffusion Models, and Diffusion Flow.**
+> **Tracking the frontier of Generative AI: Diffusion and Flow Models.**
 
 This repository is a curated, **daily-updated** collection of the latest research papers from ArXiv. It is designed for researchers, engineers, and enthusiasts who want to stay ahead in the rapidly evolving field of continuous-time generative models.
 
