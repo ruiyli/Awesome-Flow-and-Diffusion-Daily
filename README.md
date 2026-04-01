@@ -3374,3 +3374,69 @@ While the paper list is automated, we welcome community contributions!
   > We present Seen2Scene, the first flow matching-based approach that trains directly on incomplete, real-world 3D scans for scene completion and generation. Unlike prior methods that rely on complete and hence synthetic 3D data, our approach introduces visibility-guided flow matching, which explicitly masks out unknown regions in real scans, enabling effective learning from real-world, partial observations. We represent 3D scenes using truncated signed distance field (TSDF) volumes encoded in sparse grids and employ a sparse transformer to efficiently model complex scene structures while masking unknown regions. We employ 3D layout boxes as an input conditioning signal, and our approach is flexibly adapted to various other inputs such as text or partial scans. By learning directly from real-world, incomplete 3D scans, Seen2Scene enables realistic 3D scene completion for complex, cluttered real environments. Experiments demonstrate that our model produces coherent, complete, and realistic 3D scenes, outperforming baselines in completion accuracy and generation quality.
 
 ---
+
+
+## 2026-04-01
+### [Video Models Reason Early: Exploiting Plan Commitment for Maze Solving](https://arxiv.org/abs/2603.30043v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > Video diffusion models exhibit emergent reasoning capabilities like solving mazes and puzzles, yet little is understood about how they reason during generation. We take a first step towards understanding this and study the internal planning dynamics of video models using 2D maze solving as a controlled testbed. Our investigations reveal two findings. Our first finding is early plan commitment: video diffusion models commit to a high-level motion plan within the first few denoising steps, after which further denoising alters visual details but not the underlying trajectory. Our second finding is that path length, not obstacle density, is the dominant predictor of maze difficulty, with a sharp failure threshold at 12 steps. This means video models can only reason over long mazes by chaining together multiple sequential generations. To demonstrate the practical benefits of our findings, we introduce Chaining with Early Planning, or ChEaP, which only spends compute on seeds with promising early plans and chains them together to tackle complex mazes. This improves accuracy from 7% to 67% on long-horizon mazes and by 2.5x overall on hard tasks in Frozen Lake and VR-Bench across Wan2.2-14B and HunyuanVideo-1.5. Our analysis reveals that current video models possess deeper reasoning capabilities than previously recognized, which can be elicited more reliably with better inference-time scaling.
+
+---
+### [Benchmarking PhD-Level Coding in 3D Geometric Computer Vision](https://arxiv.org/abs/2603.30038v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > AI-assisted coding has rapidly reshaped software practice and research workflows, yet today's models still struggle to produce correct code for complex 3D geometric vision. If models could reliably write such code, the research of our community would change substantially. To measure progress toward that goal, we introduce GeoCodeBench, a PhD-level benchmark that evaluates coding for 3D vision. Each problem is a fill-in-the-function implementation task curated from representative papers at recent venues: we first let a tool propose candidate functions from official repositories, then perform careful human screening to select core 3D geometric components. For every target, we generate diverse, edge-case unit tests, enabling fully automatic, reproducible scoring. We evaluate eight representative open- and closed-source models to reflect the current ecosystem. The best model, GPT-5, attains only 36.6% pass rate, revealing a large gap between current capabilities and dependable 3D scientific coding. GeoCodeBench organizes tasks into a two-level hierarchy: General 3D capability (geometric transformations and mechanics/optics formulation) and Research capability (novel algorithm implementation and geometric logic routing). Scores are positively correlated across these axes, but research-oriented tasks are markedly harder. Context ablations further show that "more paper text" is not always better: cutting off at the Method section statistically outperforms full-paper inputs, highlighting unresolved challenges in long-context scientific comprehension. Together, these findings position GeoCodeBench as a rigorous testbed for advancing from generic coding to trustworthy 3D geometric vision coding.
+
+---
+### [Asymptotic stability of heteroclinic cycles of type Y](https://arxiv.org/abs/2603.30011v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > We investigate stability of a new class of heteroclinic cycles that we call heteroclinic cycles of type Y. The cycles can be regarded as a generalisation of heteroclinic cycles of type Z introduced in [Podvigina, Nonlinearity 25, 2012]. The type Y cycles differ from the cycles of type Z in the following: The trajectories comprising a cycle of type Y belong to flow-invariant subspaces that can be of different dimensions. Unlike in the most studies of the stability of heteroclinic cycles, we do not require that the eigenvalues of the linearisations of the dynamical system near the equilibria are distinct. Instead of the common assumption that the cycles are robust, we prescribe flow-invariance of certain subspaces. Similarly to type Z cycles, asymptotic stability and fragmentary asymptotic stability of type Y cycles is determined by the eigenvalues and eigenvectors of transition matrices. The matrices are products of basic transition matrices that depend on the eigenvalues of linearisations and the dimensions of the contracting subspaces.
+
+---
+### [Voronoi-Based Vacuum Leakage Detection in Composite Manufacturing](https://arxiv.org/abs/2603.29980v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > In this article, we investigate vacuum leakage detection problems in composite manufacturing. Our approach uses Voronoi diagrams, a well-known structure in discrete geometry. The Voronoi diagram of the vacuum connection positions partitions the component surface. We use this partition to narrow down potential leak locations to a small area, making an efficient manual search feasible. To further reduce the search area, we propose refined Voronoi diagrams. We evaluate both variants using a novel dataset consisting of several hundred one- and two-leak positions along with their corresponding flow values. Our experimental results demonstrate that Voronoi-based predictive models are highly accurate and have the potential to resolve the leakage detection bottleneck in composite manufacturing.
+
+---
+### [GreenFLag: A Green Agentic Approach for Energy-Efficient Federated Learning](https://arxiv.org/abs/2603.29933v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > Progressing toward a new generation of mobile networks, a clear focus on integrating distributed intelligence across the system is observed to drive performance, autonomy, and real-time adaptability. Federated learning (FL) stands out as a key emerging technique, enabling on-device model training while preserving data locality. However, its operation introduces substantial energy and resource demands. Energy needs are mostly met by grid power sources, while FL resource orchestration strategies remain limited. This work introduces GreenFLag, an agentic resource orchestration framework designed to minimize the energy consumption from the grid power to complete FL workflows, guarantee FL model performance, and reduce grid power reliance by incorporating renewable sources into the system. GreenFLag leverages a Soft-Actor Critic reinforcement learning approach to jointly optimize computational and communication resources, while accounting for communication contention and the dynamic availability of renewable energy. Evaluations using a real-world open dataset from Copernicus, demonstrate that GreenFLag significantly reduces grid energy consumption by 94.8% on average, compared to three state-of-the-art baselines, while primarily relying on green power.
+
+---
+### [Diffusion-Based Feature Denoising with NNMF for Robust handwritten digit multi-class classification](https://arxiv.org/abs/2603.29917v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > This work presents a robust multi-class classification framework for handwritten digits that combines diffusion-driven feature denoising with a hybrid feature representation. Inspired by our previous work on brain tumor classification, the proposed approach operates in a feature space to improve the robustness to noise and adversarial attacks. First, the input images are converted into tight, interpretable exemplification using Nonnegative Matrix Factorization (NNMF). In parallel, special deep features are extracted using a computational neural network (CNN). These integral features are combined into a united hybrid representation. To improve robustness, a step diffusion operation is used in the feature space by gradually adding Gaussian noise. A feature denoiser network is trained to reverse this operation and rebuild clean representations from tilted inputs. The courteous features are then applied for multi-class classification. The suggested method is evaluated in both baseline and adversarial settings using AutoAttack. The experimental outcome present that the diffusion-based hybrid model is both effective and robust, the CNN baseline models outperforming while maintain powerful classification performance. These results explain the activity of feature-level diffusion defense for reliable multi-class handwritten digit classification.
+
+---
+### [A Python Framework for Reaction--Diffusion--Chemotaxis Simulations on One-Dimensional Network Geometries](https://arxiv.org/abs/2603.29807v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > We present BioNetFlux, an open-source Python framework for the numerical simulation of coupled systems of partial differential equations (PDEs) on one-dimensional multi-arc networks by the Hybridized Discontinuous Galerkin method. Its design targets biological transport phenomena on graph-like geometries that arise naturally in microfluidic organ-on-chip (OoC) devices, vascular networks, and in-vitro cell-migration assays.
+
+---
+### [Detecting speculative leaks with compositional semantics](https://arxiv.org/abs/2603.29800v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > Speculative execution enhances processor performance by predicting intermediate results and executing instructions based on these predictions. However, incorrect predictions can lead to security vulnerabilities, as speculative instructions leave traces in microarchitectural components that attackers can exploit. This is demonstrated by the family of Spectre attacks. Unfortunately, existing countermeasures to these attacks lack a formal security characterization, making it difficult to verify their effectiveness. In this paper, we propose a novel framework for detecting information flows introduced by speculative execution and reasoning about software defenses. The theoretical foundation of our approach is speculative non-interference (SNI), a novel semantic notion of security against speculative execution attacks. SNI relates information leakage observed under a standard non-speculative semantics to leakage arising under semantics that explicitly model speculative execution. To capture their combined effects, we extend our framework with a mechanism to safely compose multiple speculative semantics, each focussing on a single aspect of speculation. This allows us to analyze the complex interactions and resulting leaks that can arise when multiple speculative mechanisms operate together. On the practical side, we develop Spectector, a symbolic analysis tool that uses our compositional framework and leverages SMT solvers to detect vulnerabilities and verify program security with respect to multiple speculation mechanisms. We demonstrate the effectiveness of Spectector through evaluations on standard security benchmarks and new vulnerability scenarios.
+
+---
+### [HPCCFA: Leveraging Hardware Performance Counters for Control Flow Attestation](https://arxiv.org/abs/2603.29749v1)
+- **Date**: 2026-03-31
+- **Code**: N/A
+- **Abstract**:
+  > Trusted Execution Environments (TEEs) allow the secure execution of code on remote systems without the need to trust their operators. They use static attestation as a central mechanism for establishing trust, allowing remote parties to verify that their code is executed unmodified in an isolated environment. However, this form of attestation does not cover runtime attacks, where an attacker exploits vulnerabilities in the software inside the TEE. Control Flow Attestation (CFA), a form of runtime attestation, is designed to detect such attacks. In this work, we present a method to extend TEEs with CFA and discuss how it can prevent exploitation in the event of detected control flow violations. Furthermore, we introduce HPCCFA, a mechanism that uses HPCs for CFA purposes, enabling hardware-backed trace generation on commodity CPUs. We demonstrate the feasibility of HPCCFA on a proof-of-concept implementation for Keystone on RISC-V. Our evaluation investigates the interplay of the number of measurement points and runtime protection, and reveals a trade-off between detection reliability and performance overhead.
+
+---
